@@ -36,3 +36,7 @@ RxJava
 
 # Homework
 完成数据加载并利用Recycler显示列表
+
+大家利用AssetManager读取assets文件夹下的Json数据，绑定到Model的数据上，然后把数据传递给RecyclerView
+在Recycler加一个header，显示用户自己的信息
+Mock Up已经放到demo文件夹里面了
