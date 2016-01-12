@@ -24,6 +24,6 @@
         android:layout_height="match_parent"
         android:layout_below="@id/name_button"
         android:visibility="gone"
-        tools:listitem="@android:layout/simple_list_item_2" />
+        tools:listitem="@layout/list_item_layout" />
 
 </RelativeLayout>
