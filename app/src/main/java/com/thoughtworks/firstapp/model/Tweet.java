@@ -13,7 +13,7 @@ public class Tweet {
     @Expose
     private List<Image> images = new ArrayList<Image>();
     @Expose
-    private Sender sender;
+    private User sender;
 
     /**
      * 
@@ -56,7 +56,7 @@ public class Tweet {
      * @return
      *     The sender
      */
-    public Sender getSender() {
+    public User getSender() {
         return sender;
     }
 
@@ -65,7 +65,7 @@ public class Tweet {
      * @param sender
      *     The sender
      */
-    public void setSender(Sender sender) {
+    public void setSender(User sender) {
         this.sender = sender;
     }
 
