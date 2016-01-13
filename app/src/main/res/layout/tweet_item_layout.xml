@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.AppCompat.Button.Borderless"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:listPreferredItemHeight"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/tweet_item_padding_vertical"
+        android:paddingEnd="@dimen/list_item_padding"
+        android:paddingLeft="@dimen/list_item_padding"
+        android:paddingRight="@dimen/list_item_padding"
+        android:paddingStart="@dimen/list_item_padding"
+        android:paddingTop="@dimen/tweet_item_padding_vertical">
+
+        <ImageView
+            android:id="@+id/tweet_sender_icon"
+            style="@style/TweetIcon"
+            android:layout_width="@dimen/tweet_item_icon_size"
+            android:layout_height="@dimen/tweet_item_icon_size"
+            android:layout_marginEnd="@dimen/tweet_item_space_margin"
+            android:contentDescription="@mipmap/ic_launcher"
+            tools:src="@mipmap/ic_launcher" />
+
+
+        <TextView
+            android:id="@+id/tweet_sender_name"
+            style="@style/BaseTextView.Small.DarkBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tweet_sender_icon"
+            tools:text="@string/user_nick" />
+
+        <TextView
+            android:id="@+id/tweet_content"
+            style="@style/TweetContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/tweet_sender_name"
+            android:layout_below="@id/tweet_sender_name"
+            android:layout_marginTop="@dimen/tweet_item_text_margin"
+            tools:text="@string/test_content" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

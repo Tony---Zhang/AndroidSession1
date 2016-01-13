@@ -24,4 +24,13 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:text="@string/label_second" />
+
+    <Button
+        android:id="@+id/btn_tweetlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_second"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/label_tweetlist" />
 </RelativeLayout>

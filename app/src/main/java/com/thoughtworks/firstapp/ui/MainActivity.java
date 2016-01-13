@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.thoughtworks.firstapp.BuildConfig;
 import com.thoughtworks.firstapp.R;
+import com.thoughtworks.firstapp.ui.tweetlist.TweetListActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,10 +26,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btn_tweetlist).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                launchTweetListActivity();
+            }
+        });
+
         System.err.println("This is an error");
         if (BuildConfig.DEBUG) {
             Log.e("FirstApp", "This is an error");
         }
+    }
+
+    private void launchTweetListActivity() {
+        Intent intent = new Intent(this, TweetListActivity.class);
+        startActivity(intent);
     }
 
     private void launchSecondActivity() {
